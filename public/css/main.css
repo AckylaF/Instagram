@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* PRESET */
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+li, i{
+	cursor: pointer;
+}
+a{
+	color: inherit;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fafafa;
+	line-height: 0;
+}
+.container{
+	width: 92%;
+	margin: 0 auto;
+}
+
+/* PAGE */
+
+header{
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	background-color: white;
+	color: black;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.header__box{
+	height: 3.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__logo{
+	width: 8rem;
+	margin-top: 0.8rem;
+}
+.header__box i{
+	color: black;
+}
+.top__stories{
+	display: flex;
+	padding: 1.5em 0;
+	margin-top: 50px;
+}
+.top__stories--storyCircle img{
+	height: 4.5rem;
+	width: 4.5rem;
+	border-radius: 50px;
+	margin-right: 1em;
+}
+.top__stories--storyCircle:nth-child(2) img{
+	height: 5em;
+	width: 5em;
+	border: 3px solid #d22f70;
+	padding: 2px;
+}
+.feed__post{
+	background-color: white;
+	margin-bottom: 2em;
+	border-radius: 10px;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+.feed__post--user{
+	display: flex;
+	align-items: center;
+	padding: 0.7em 0.5rem;
+}
+.feed__post--username{
+	margin: 0;
+	font-size: 0.8rem;
+	color: black;
+}
+.feed__post--user i{
+	margin-left: auto;
+}
+.feed__post--userAvatar{
+	width: 2.5em;
+	height: 2.5em;
+	border-radius: 50px;
+	margin-right: 0.5em;
+}
+.feed__post--image{
+	width: 100%;
+}
+.feed__post--interaction{
+	display: flex;
+}
+.feed__post--interaction i{
+	font-size: 1.5rem;
+	padding: 0.5em;
+}
+.feed__post--interaction i:last-child{
+	margin-left: auto;
+}
+.feed__post--footer{
+	background-color: rgba(0, 0, 0, 0.05);
+	display: flex;
+	align-items: center;
+	border-radius: 0 0 10px 10px;
+	padding: 0.5em;
+}
+.post__footer--userAvatar{
+	width: 2em;
+	height: 2em;
+	border-radius: 50px;
+}
+.feed__post--footer span{
+	margin: 0 0 0 0.5em;
+	font-size: 0.8em;
+}
+
+/* DESKTOP */
+
+@media (min-width: 1024px){
+	.container{
+		width: 55%;
+	}
+}
